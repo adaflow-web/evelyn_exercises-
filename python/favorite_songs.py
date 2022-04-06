@@ -3,38 +3,27 @@ my_music = ["The House of the Rising Sun",
             "Ain't No Sunshine",
             "Landing in London"]
 
-print("These are my 5 favorite songs:")
+print("These are my favorite songs:")
 
 for song in my_music:
     print(song)
 
 
-user_songs = []
-new_song = input ("What are yours: ")
-  
+user_playlist = []
+new_song = ""
 
-print(user_songs)
+while new_song != "end":
+    new_song = input ("What are yours? Type 'end' to finish adding songs: ") 
+    user_playlist.append(new_song)
+
+    if new_song == "end":
+        user_playlist.remove("end")
+        for user_song in user_playlist:
+            print (user_song)
+             
     
 
-
-
-# names = []
-
-# new_name = ''
-
-# # Start a loop that will run until the user enters 'quit'.
-# while new_name != 'quit':
-#     new_name = input("Enter Name, or 'quit': ")
-
-#     if new_name != 'quit':
-#         names.append(new_name)
-
-# print(names)
-
-
-  
-
-  
+    
 
 
 
