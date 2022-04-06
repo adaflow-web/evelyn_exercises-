@@ -18,6 +18,7 @@ while new_song != "end":
 
     if new_song == "end":
         user_playlist.remove("end")
+        print("Your favorite songs are: ")
         for user_song in user_playlist:
             print (user_song)
              
