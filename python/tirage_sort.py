@@ -21,10 +21,10 @@ def keep_playing():   # avec cette function je veux demander aux users s'ils veu
     while question_user != "oui" and question_user != "non":
         return "Oups, vous pouvez seulement répondre oui ou non!"
     
-    if question_user == "Oui":
+    if question_user == "oui":
         return True 
     else:
-        return False   # ce truc ne marche pas!!!!!  aarrrrgggg
+        return False  
         
 
 while end_game != True:
@@ -43,12 +43,12 @@ while end_game != True:
       print (winner_message())           
       for win in winner:
         print (win)
-        end_game = True   # J'ai essayé en appelant la function keep_playing() au lieu de end_game = True 
-      # J'essayé en dehors de la boucle For mais ne marche pas non plus. 
+      end_game = not(keep_playing()) #si keep_playing est égal à True alors end_game vaut False ( On arrête pas le jeu si la personne veut continuer à jouer )  
+        
     else:
         print("Il y a un maximun de 8 personnes dans la liste de jouers")
 
-# si j'appelle la function ici ça fait NADA
+
 
 
          
