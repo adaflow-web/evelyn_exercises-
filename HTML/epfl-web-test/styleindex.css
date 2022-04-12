@@ -1,0 +1,32 @@
+.navigation {
+    text-align: right;
+}
+
+.link {
+     color:red;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   color:white;
+   background-color:rgb(37, 37, 37);
+   text-align: center;
+}
+h2 {
+    color: green;
+    
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid #373737;
+}
+#specialsub {
+    color: #373737;
+    font-size: 16px;
+}
+
