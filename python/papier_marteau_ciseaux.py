@@ -6,7 +6,7 @@ playing = True
 def user_wins(user, computer):
     if user == computer:
         print("Il y a égalité!")
-    #p > m /c > p / m > c
+    #p > m /c > p / m > c  
     elif (user == "p" and computer == "m") or (user == "c" and computer == "p") or (user == "m" and computer == "c"):
         print ("Tu as gagné :)")
         
@@ -14,7 +14,7 @@ def user_wins(user, computer):
         print ("Tu as perdu :(")
    
 
-def play_again(): # ERROR variable no entiendo nada
+def play_again(): 
     ask_user = input("On joue à nouveau? oui/non: ")
         
     while ask_user != "oui" and ask_user != "non":
