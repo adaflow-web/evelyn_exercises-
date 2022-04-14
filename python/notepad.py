@@ -1,14 +1,14 @@
 #Next idea for notepad 1.2 what about keeping track of date and time of each note? 
 #create a note
 def write_note(content):
-    file = open("C:/Users/Evelyn/Desktop/my_codes/python/notepad/notes.txt", "a") #my python doesn't create a note. 
+    file = open("notes.txt", "a") #my python doesn't create a note. 
     file.write("______\n")                                                        #I had to create it myself and give the path/why????
     file.write(content + "\n")
     file.close()
 
 #searching for a note
 def search_note(content):
-    file = open("C:/Users/Evelyn/Desktop/my_codes/python/notepad/notes.txt")
+    file = open("notes.txt")
     text = file.read()
     notes = text.split("______")
     note_found = ""
