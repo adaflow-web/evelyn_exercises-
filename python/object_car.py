@@ -16,7 +16,7 @@ class Car:
         print (self.color + " cars are the best sellers." )     
 
     def travel(self):
-        print ("I prefer " + self.type + " to travel long distances.")  
+        print ("I prefer " + self.type + " cars to travel long distances.")  
 
 peugeot = Car("white", "automatic", "308", 5)
 

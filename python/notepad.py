@@ -1,14 +1,16 @@
 #Next idea for notepad 1.2 what about keeping track of date and time of each note? 
 #create a note
+
+filename = "notes.txt"
 def write_note(content):
-    file = open("notes.txt", "a") #my python doesn't create a note. 
-    file.write("______\n")                                                        #I had to create it myself and give the path/why????
+    file = open(filename, "a") #my python doesn't create a note. 
+    file.write("______\n")                                                        
     file.write(content + "\n")
     file.close()
 
 #searching for a note
 def search_note(content):
-    file = open("notes.txt")
+    file = open(filename)
     text = file.read()
     notes = text.split("______")
     note_found = ""
@@ -30,7 +32,7 @@ def erase_note():
    if ask_user != "Y" and ask_user != "N":
        return " Y or N"
    elif ask_user == "Y":
-       file = open("notes.txt" , "w")
+       file = open(filename , "w")
        file.close()
    
 

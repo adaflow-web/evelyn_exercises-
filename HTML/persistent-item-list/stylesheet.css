@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+
+}
+.title {
+    padding: 20px;
+    color:crimson;
+    text-align: center;
+    font-size: 26px;
+
+}
+#content {
+    background-color: rgb(71, 70, 70);
+    padding: 20px;
+   
+
+}
+.para{    
+    font-size: 16px;
+    padding: 8px;
+    color: white;
+  
+}
+#addItem{
+    background-color: green;
+
+}
+#delItem{
+    background-color: yellow;
+}
+#clearAll{
+    background-color: red;
+}
+input[type="button"]{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    
+}
+input[type="text"] {
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+}
